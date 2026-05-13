@@ -33,9 +33,9 @@ import java.net.URLClassLoader;
  * resources. It extends URLClassLoader to search the applet code base
  * for the class or resource after checking any loaded JAR files.
  */
-public class CustomizedClassLoader extends URLClassLoader {
+public class CustomizedClassLoader2 extends URLClassLoader {
 
-    public CustomizedClassLoader(URL[] urls) {
+    public CustomizedClassLoader2(URL[] urls) {
         super(urls);
     }
 
@@ -44,7 +44,7 @@ public class CustomizedClassLoader extends URLClassLoader {
     {
         synchronized (getClassLoadingLock(name)) {
             Class<?> c;
-            if (!name.startsWith("cn.com.nightfield.jvm.classloader")) {
+            if (!name.startsWith("jvm.classloader")) {
                 return super.loadClass(name, resolve);
             }
             else {

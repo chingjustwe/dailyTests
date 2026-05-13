@@ -1,0 +1,8 @@
+other/Interface2.class
+thread/concurrent/CyclicBarrierTest$1.class
+aop/TargetInterface.class
+aop/DynamicProxyHandler.class
+nio/netty/EchoClient$1.class
+thread/concurrent/CyclicBarrierTest.class
+nio/netty/EchoClient.class
+thread/concurrent/CyclicWorker.class
